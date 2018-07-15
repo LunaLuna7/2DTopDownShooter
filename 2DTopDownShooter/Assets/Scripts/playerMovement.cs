@@ -15,23 +15,16 @@ public class playerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetAxis("Vertical") < 0.0f)
+		if (Input.GetAxis("Vertical") > 0.5f || Input.GetAxis("Vertical") < -0.5f)
 		{
 			playerY = Input.GetAxis("Vertical") * moveSpeed;
-		}
-		else if (Input.GetAxis("Vertical") > 0.0f)
-		{
-			playerY = Input.GetAxis("Vertical") * moveSpeed;
-		}
-		else if (Input.GetAxis("Horizontal") < 0.0f)
-		{
-			playerX = Input.GetAxis("Horizontal") * moveSpeed;
-		}
-		else if (Input.GetAxis("Horizontal") > 0.0f)
-		{
-			playerX = Input.GetAxis("Horizontal") * moveSpeed;
+			transform.Translate(new Vector3(0.0f, playerY, 0.0f));
 		}
 
-		transform.position = new Vector3(playerX, playerY, transform.position.z);
+		if(Input.GetAxis("Horizontal") > 0.5f || Input.GetAxis("Horizontal") < -0.5f)
+		{
+			playerX = Input.GetAxis("Horizontal") * moveSpeed;
+			transform.Translate(new Vector3(playerX, 0.0f, 0.0f));
+		}
 	}
 }

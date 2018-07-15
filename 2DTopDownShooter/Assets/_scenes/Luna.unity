@@ -113,6 +113,48 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &351986211
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.8267442
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.17397243
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.03515625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666624744488718, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &420670520
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9dc560e6700074a941588ab29a55e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TimeToDetonate: 5
+  explotion: {fileID: 1765388492470470, guid: 3648ae77f2d117b488e0df491f596c97, type: 2}
 --- !u!1 &707984276
 GameObject:
   m_ObjectHideFlags: 0

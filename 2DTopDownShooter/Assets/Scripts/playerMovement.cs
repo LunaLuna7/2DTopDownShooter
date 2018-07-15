@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class playerMovement : MonoBehaviour {
-	public float playerX;
-	public float playerY;
-	public float moveSpeed = 1.5f;
+	public float playerX = 0;
+	public float playerY = 0;
+	public float moveSpeed = 0.75f;
 
 	// Use this for initialization
 	void Start () {
-		playerX = transform.position.x;
-		playerY = transform.position.y;
+		
 	}
 	
 	// Update is called once per frame

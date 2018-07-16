@@ -6203,6 +6203,7 @@ GameObject:
   - component: {fileID: 1684269722}
   - component: {fileID: 1684269721}
   - component: {fileID: 1684269723}
+  - component: {fileID: 1684269724}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -6254,9 +6255,25 @@ MonoBehaviour:
   - {fileID: 1625620875}
   - {fileID: 1071256080}
   - {fileID: 423653861}
+  target: {fileID: 0}
   speed: 4
   waitTime: 2
   startWaitTime: 2
+  patrolling: 0
+  chasing: 0
+--- !u!114 &1684269724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1684269720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d4a58cef412e84e964dc84665ad5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 1
+  health: 0
 --- !u!1 &1759005743
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,12 +5,14 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
 
     public Transform[] patrolAreas;
+    public Transform target;
+
     public float speed;
     public float waitTime;
     public float startWaitTime;
 
     public bool patrolling;
-    public float chasing;
+    public bool chasing;
 
     private int areaToPatrol;
     void Start()
@@ -39,9 +41,18 @@ public class Enemy : MonoBehaviour {
                 }
             }
         }
-        //else if (chasing)
-        //{
+        else if (chasing)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+    }
 
-        //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            patrolling = false;
+            chasing = true;
+        }
     }
 }

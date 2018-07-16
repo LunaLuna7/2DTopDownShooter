@@ -55,6 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4666624744488718}
+  - component: {fileID: 114069365618527908}
   m_Layer: 0
   m_Name: Explotion
   m_TagString: Untagged
@@ -118,6 +119,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.0000000037252903}
   serializedVersion: 2
   m_Radius: 2
+--- !u!114 &114069365618527908
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1765388492470470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2fee867fa44d1848a4c9c820cbe6f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0.5
 --- !u!114 &114171614290617516
 MonoBehaviour:
   m_ObjectHideFlags: 1

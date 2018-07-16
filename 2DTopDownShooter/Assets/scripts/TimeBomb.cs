@@ -26,7 +26,7 @@ public class TimeBomb : MonoBehaviour {
     IEnumerator BombActivated()
     {
         yield return new WaitForSeconds(TimeToDetonate);
-        Instantiate(explotion);
+        Instantiate(explotion, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 }

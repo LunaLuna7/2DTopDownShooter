@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public Transform[] patrolAreas;
+    public Transform[] patrolAreas; //positions to move from
     public Transform target;
 
     public float speed;

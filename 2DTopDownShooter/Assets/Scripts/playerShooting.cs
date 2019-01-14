@@ -9,7 +9,7 @@ public class playerShooting : MonoBehaviour {
 	private Vector2 mousePosition; //position of mouse
 	private Vector2 firingOrigin; //the (x,y) coordinates of the firingpoint gameObject
 	private RaycastHit2D hit; //the line the bullet will follow
-	private enemyBehavior damaging; //the enemy script to access variables
+	private Health damaging; //the enemy script to access variables
 	private weaponInfo useClip; //the weapon info script to access variables
 
 	// Use this for initialization
@@ -50,8 +50,8 @@ public class playerShooting : MonoBehaviour {
 			//and tag all enemies with the same tag to compare
 			if (hit && hit.collider.CompareTag("Enemy"))
 			{
-				damaging = hit.collider.GetComponent<enemyBehavior>();
-				damaging.currentHealth--;
+				damaging = hit.collider.GetComponent<Health>();
+				damaging.health--;
 			}
 
 			//fires one bullet, subtracting from the current ammo 

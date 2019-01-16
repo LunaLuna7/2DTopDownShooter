@@ -27,12 +27,12 @@ public class Health : MonoBehaviour
 		}
 	}
 
-	void Start()
+	private void Start()
 	{
 		health = maxHealth;
 	}
 
-	void Die()
+	private void Die()
 	{
 		Destroy(gameObject);
 	}

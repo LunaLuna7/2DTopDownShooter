@@ -6,7 +6,7 @@ public class PlayerRotation : MonoBehaviour
 	public float speed = 5;
 	public bool instant;
 
-	void Update()
+	private void Update()
 	{
 		Vector2 mouseDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 		float mouseAngle = Mathf.Atan2(mouseDirection.y, mouseDirection.x) * Mathf.Rad2Deg;

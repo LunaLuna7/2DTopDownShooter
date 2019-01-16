@@ -9,7 +9,7 @@ public class DestroyOnTime : MonoBehaviour
 {
 	public float time;
 
-	void Start()
+	private void Start()
 	{
 		Destroy(gameObject, time);
 	}

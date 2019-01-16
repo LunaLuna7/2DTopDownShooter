@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	public bool relative;
 
 	// Update is called once per frame
-	void Update()
+	private void Update()
 	{
 		Vector3 input = smooth
 			? new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"))

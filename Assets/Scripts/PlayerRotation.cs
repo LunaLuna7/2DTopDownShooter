@@ -1,6 +1,12 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
+/// <summary>
+/// Manages player rotation based on mouse position.
+/// </summary>
+/// <remarks>
+///	Requires the original player image to face right.
+/// </remarks>
 public class PlayerRotation : MonoBehaviour
 {
 	public float speed = 5;

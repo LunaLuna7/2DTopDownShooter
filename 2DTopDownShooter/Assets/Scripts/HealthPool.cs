@@ -4,7 +4,24 @@ using UnityEngine.Events;
 /// <summary>
 /// Manages health for both players and enemies.
 /// </summary>
-public class Health : MonoBehaviour
+/// <remarks>
+///	<para>
+/// `health` is a read-only attribute to get the current health in the health pool.
+/// </para>
+/// <para>
+/// `Damage` and `Heal` do what you think they do.
+/// </para>
+/// <para>
+/// The class currently contains 2 events, `afterHealthChange` and `onDeath`.
+/// </para>
+/// <para>
+/// `afterHealthChange` gets invoked at the end of a `Damage`/`Heal` call. It's useful for things like updating the health HUD.
+/// </para>
+/// <para>
+///	`onDeath` gets invoked when `health` reaches 0. You can pair it with `DestroyOnDeath` to destroy the game object, or implement your custom death mechanic.
+/// </para>
+/// </remarks>
+public class HealthPool : MonoBehaviour
 {
 	public int maxHealth;
 	public int health { get; private set; }
@@ -20,6 +37,8 @@ public class Health : MonoBehaviour
 
 	public void Damage(int amount)
 	{
+		Debug.Assert(amount >= 0);
+		
 		health = Mathf.Clamp(health - amount, 0, maxHealth);
 
 		afterHealthChange.Invoke();
@@ -32,6 +51,8 @@ public class Health : MonoBehaviour
 
 	public void Heal(int amount)
 	{
+		Debug.Assert(amount >= 0);
+		
 		health = Mathf.Clamp(health + amount, 0, maxHealth);
 		
 		afterHealthChange.Invoke();

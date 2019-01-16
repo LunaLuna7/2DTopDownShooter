@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 	public bool smooth;
 
 	/// <summary>
-	/// If movement is set to `relative`, player movement would be based on the character's rotation instead of absolute directions. 
+	/// If movement is set to `relative`, player movement would be based on the character's rotation instead of absolute directions.
 	/// </summary>
 	public bool relative;
 

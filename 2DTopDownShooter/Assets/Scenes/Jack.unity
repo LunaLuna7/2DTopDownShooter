@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bec9f1bdf358d614d9a0c7e1d169790e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_PlayerHealth: {fileID: 0}
   healthBar: {fileID: 0}
   healthText: {fileID: 0}
 --- !u!114 &520009636
@@ -205,9 +206,14 @@ MonoBehaviour:
   maxHealth: 10
   afterHealthChange:
     m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  onDeath:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520009635}
-        m_MethodName: HealthDidChange
+      - m_Target: {fileID: 520009639}
+        m_MethodName: DestroyOnDeath
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

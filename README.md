@@ -19,6 +19,9 @@ If you are making a game using the scaffold, you should not use anything in the 
 
 _Additional documentation and remarks available in script files_
 
+* `ConstantDamageSource` - 
+  Deals a set amount of damage to anything with health that comes into contact.
+  Turn on `persistent` to keep the object after dealing damage.
 * `FollowTarget` -
   Makes the game object maintain a constant offset with respect to another game object.
   Useful for making the camera follow the player.

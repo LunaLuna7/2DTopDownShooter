@@ -2,10 +2,11 @@
 
 2D Top down shooter scaffold made by VGDC
 
-## Included Files
+## Files Included
 
-Any file in `ScaffoldDevelopment` sub-folder is for the developers of scaffold.
-If you are making a game using the scaffold, you should not use anything in the folder. 
+_Note: Any file in a_ `ScaffoldDevelopment` _sub-folder is for the developers of scaffold.
+They may contain experimental, outdated, or broken assets.
+If you are making a game using the scaffold, you should not use anything in the folder._ 
 
 ### Scenes
 
@@ -32,3 +33,10 @@ _Additional documentation and remarks available in script files_
 
 * `Ninja` - 
   The placeholder character image.
+
+## Files Not Included
+
+Including a mechanic often makes developers use that predefined mechanic, instead of coming up with their own. Therefore, we do not and _will not_ provide:
+
+* Enemy AI
+* Weapon mechanics

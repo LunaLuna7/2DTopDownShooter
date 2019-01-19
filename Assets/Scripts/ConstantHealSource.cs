@@ -14,6 +14,7 @@ public class ConstantHealSource : MonoBehaviour
     {
         var otherHealth = other.GetComponent<HealthPool>();
         if (otherHealth == null) return;
+        if (!otherHealth.CompareTag("Player")) return;
 		
         otherHealth.Heal(healAmount);
 

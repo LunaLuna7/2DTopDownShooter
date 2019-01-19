@@ -22,6 +22,8 @@ _Additional documentation and remarks available in script files_
 * `ConstantDamageSource` - 
   Deals a set amount of damage to anything with a `HealthPool` that comes into contact.
   Turn on `persistent` to keep the object after dealing damage.
+* `ConstantHealSource` -
+  Similar to `ConstantDamageSource`, except that it heals instead of damages and only affects the player.
 * `FollowTarget` -
   Makes the game object maintain a constant offset with respect to another game object.
   Useful for making the camera follow the player.

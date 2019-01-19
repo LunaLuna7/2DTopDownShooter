@@ -2,7 +2,7 @@
 
 public class ConstantDamageSource : MonoBehaviour
 {
-	public int damage = 1;
+	public int damageAmount = 1;
 	/// <summary>
 	/// If true, the game object will not be destroyed after dealing damage.
 	/// </summary>
@@ -13,7 +13,7 @@ public class ConstantDamageSource : MonoBehaviour
 		var otherHealth = other.GetComponent<HealthPool>();
 		if (otherHealth == null) return;
 		
-		otherHealth.Damage(damage);
+		otherHealth.Damage(damageAmount);
 
 		if (!persistent)
 		{

@@ -5,21 +5,11 @@ using UnityEngine.Events;
 /// Manages health for both players and enemies.
 /// </summary>
 /// <remarks>
-///	<para>
 /// `health` is a read-only attribute to get the current health in the health pool.
-/// </para>
-/// <para>
 /// `Damage` and `Heal` do what you think they do.
-/// </para>
-/// <para>
 /// The class currently contains 2 events, `afterHealthChange` and `onDeath`.
-/// </para>
-/// <para>
 /// `afterHealthChange` gets invoked at the end of a `Damage`/`Heal` call. It's useful for things like updating the health HUD.
-/// </para>
-/// <para>
 ///	`onDeath` gets invoked when `health` reaches 0. You can pair it with `DestroyOnDeath` to destroy the game object, or implement your custom death mechanic.
-/// </para>
 /// </remarks>
 public class HealthPool : MonoBehaviour
 {

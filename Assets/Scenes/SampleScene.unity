@@ -54438,7 +54438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.064638235, y: 0.2118645}
   m_AnchorMax: {x: 0.15339702, y: 0.763}
-  m_AnchoredPosition: {x: 0.12661743, y: 0.074798584}
+  m_AnchoredPosition: {x: 0.12664795, y: 0.074798584}
   m_SizeDelta: {x: 1.866806, y: -0.114170074}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395425482
@@ -58422,6 +58422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: afterHealthChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7485026274071775569, guid: d32846b5c6e5d6f4e853c2e07e103dc6,
+        type: 3}
+      propertyPath: relative
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d32846b5c6e5d6f4e853c2e07e103dc6, type: 3}

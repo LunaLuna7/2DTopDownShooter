@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7485026274071775575}
   - component: {fileID: 7485026274071775569}
   - component: {fileID: 7485026274071775568}
-  - component: {fileID: 7485026274071775571}
+  - component: {fileID: 520009635}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   instant: 0
---- !u!114 &7485026274071775571
+--- !u!114 &520009635
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -111,31 +111,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7485026274071775574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d4a58cef412e84e964dc84665ad5ca, type: 3}
+  m_Script: {fileID: 11500000, guid: d12dfe7f57f50d844895acdc8c168f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 10
-  afterHealthChange:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7485026274071775571}
-        m_MethodName: DestroyOnDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1 &7485026274873116414
 GameObject:
   m_ObjectHideFlags: 0

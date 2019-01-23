@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 4612241270421628}
   - component: {fileID: 3200408764614204318}
   - component: {fileID: 58496091342188722}
-  - component: {fileID: 114762976118300806}
-  - component: {fileID: 3775776587973031427}
+  - component: {fileID: 846533313}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -98,7 +97,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
---- !u!114 &114762976118300806
+--- !u!114 &846533313
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,44 +106,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195065285696726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d4a58cef412e84e964dc84665ad5ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ba90cfcf9d234b4e9f0c8f4f00b23a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  afterHealthChange:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  onDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114762976118300806}
-        m_MethodName: DestroyOnDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!114 &3775776587973031427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195065285696726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f5f60b90ede2ef4eab0f9906bf00274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 1
-  damagePlayer: 1
-  damageEnemy: 0
-  persistent: 0
+  damageAmount: 2

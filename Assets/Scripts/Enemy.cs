@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public float health;
     // Update is called once per frame
     void Update()
     {
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+   public void Damage(float amount)
     {
-        if (collision.CompareTag("Player"))
+        health -= amount;
+
+        if(health <= 0)
         {
             gameObject.SetActive(false);
-        }   
+        }
     }
 }

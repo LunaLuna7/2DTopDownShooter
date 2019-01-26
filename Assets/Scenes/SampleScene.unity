@@ -58409,5 +58409,9 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 592410235}
+    - target: {fileID: 386827816, guid: d32846b5c6e5d6f4e853c2e07e103dc6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.118
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d32846b5c6e5d6f4e853c2e07e103dc6, type: 3}

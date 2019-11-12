@@ -16,7 +16,7 @@ public class ConstantDamageSource : MonoBehaviour
 		if (otherHealth == null) return;
 		if (other.CompareTag("Player") && !damagePlayer) return;
 		if (other.CompareTag("Enemy") && !damageEnemy) return;
-		
+
 		otherHealth.Damage(damageAmount);
 
 		if (!persistent)

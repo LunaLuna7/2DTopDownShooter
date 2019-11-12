@@ -43,8 +43,6 @@ public class PlayerRotation : MonoBehaviour
 /// <summary>
 /// A custom editor for <c>PlayerRotation</c> that disables the (meaningless) <c>speed</c> when <c>instant</c> is set to true. 
 /// </summary>
-
-    
 [CustomEditor(typeof(PlayerRotation))]
 public class PlayerRotationEditor : Editor
 {

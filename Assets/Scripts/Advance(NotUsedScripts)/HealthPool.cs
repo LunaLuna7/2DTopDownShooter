@@ -15,7 +15,7 @@ public class HealthPool : MonoBehaviour
 {
 	public int maxHealth;
 	public int health { get; private set; }
-	
+
 	public UnityEvent afterHealthChange;
 	public UnityEvent onDeath;
 
@@ -28,7 +28,7 @@ public class HealthPool : MonoBehaviour
 	public void Damage(int amount)
 	{
 		Debug.Assert(amount >= 0);
-		
+
 		health = Mathf.Clamp(health - amount, 0, maxHealth);
 
 		afterHealthChange.Invoke();
@@ -42,9 +42,9 @@ public class HealthPool : MonoBehaviour
 	public void Heal(int amount)
 	{
 		Debug.Assert(amount >= 0);
-		
+
 		health = Mathf.Clamp(health + amount, 0, maxHealth);
-		
+
 		afterHealthChange.Invoke();
 	}
 
